@@ -33,6 +33,24 @@ a.slideButton, .dosearch
 .icon-search
     width rem(35px)
     height rem(35px)
+.cursos-menu
+    position fixed
+    font-size rem(20px)
+    top rem(16px)
+    right rem(110px)
+    z-index 17
+    text-decoration none
+    color #005f97
+    +below(cut)
+        display none
+    &:after
+        content 'new'
+        display inline-block
+        font-size 12px
+        vertical-align super
+        margin 0 5px
+        color #B91515
+        font-weight bold
 
 .overlay
     cursor pointer
@@ -51,6 +69,8 @@ aside
     background-color main
     z-index 20
     box-shadow inset -10px -1px 15px -9px rgba(0,0,0,0.5)
+    @media(max-height: 420px)
+        padding: 0.7rem 0 0
     h2
         text-align center
         margin 0 0 rem(10px)
@@ -74,8 +94,8 @@ aside
                 &:hover
                     color main
                     background sec
-        .feed
-            border-bottom 1px solid sec
+                @media(max-height: 420px)
+                    padding 0.65rem
     &.slide
         right 0
 

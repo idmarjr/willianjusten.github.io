@@ -59,12 +59,18 @@
   });
 
 function scrollBanner() {
-  scrollPos = $(window).scrollTop();
+  var scrollPos;
   var headerText = document.querySelector('.header-post .content')
-  headerText.style.marginTop = -(scrollPos/3)+"px";
-  headerText.style.opacity = 1-(scrollPos/480);
+  scrollPos = window.scrollY;
+
+  if (scrollPos <= 500) {
+      headerText.style.transform =  "translateY(" + (-scrollPos/3) +"px" + ")";
+      headerText.style.opacity = 1-(scrollPos/500);
+  }
 }
 
-window.addEventListener('scroll', scrollBanner);
+if (screen.width > 1024 && document.getElementsByClassName('header-post').length >=1) {
+  window.addEventListener('scroll', scrollBanner);
+}
 
 })( Zepto, window );

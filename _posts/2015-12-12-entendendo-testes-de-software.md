@@ -43,8 +43,6 @@ introduction: 'Para que servem os testes? O que eu ganho com eles? Que tipos de 
 
 Fala pessoal, esse talvez seja um dos posts que mais quis escrever e mais demorei também. Muito pelo fato de que eu não conseguia definir uma linha de pensamento de como escrever. Eu decidi que irei falar as teorias primeiro, que eu considero muito importante <s>por mais que ninguém goste</s> e então farei a prática.
 
-A ideia é ser uma pequena série de posts, onde vou falar sobre testes, Integração Contínua (CI), Entrega Contínua (CD) e após isso, a criação de uma app simples usando testes do início ao fim e fazendo deploy via CI no Heroku.
-
 Enquanto eu vou escrevendo, vou ouvindo [Ghost B.C.](https://open.spotify.com/artist/1Qp56T7n950O3EGMsSl81D), uma banda bastante controversa, mas que passei a curtir bastante.
 
 Pega lá um cafézinho e vem comigo, sei que você não gosta de teoria, mas é importante saber umas coisinhas.
@@ -138,7 +136,7 @@ Como o próprio ciclo do TDD já sugere, a última etapa é a refatoração. Ent
 
 O TDD se baseia principalmente nos testes unitários, que de fato são a base para o desenvolvimento orientado por testes. Mas existem outros testes tão importantes quanto. Martin Fowler, que é basicamente um dos maiores apoiadores do TDD, disse o seguinte: a maioria do desenvolvimento sempre foi pensada na interface e, com isso, os testes mais criados também eram os de interface. Mas o problema é que esses testes são muito lentos e nós não queremos isso. Nós queremos respostas eficientes e rápidas, por isso, os testes unitários precisam ser o de maior de número e os mesmos precisam ser bem rápidos. Seguindo esse pensamento, ele desenvolveu a seguinte pirâmide:
 
-![Pirâmide de testes](http://martinfowler.com/bliki/images/testPyramid/pyramid.png)
+![Pirâmide de testes](http://andimarek.github.io/angular-testing/images/pyramid.png)
 
 Nessa pirâmide, podemos ver que os testes unitários formam a base, seguidos pelos testes de serviço, que podem ser entendidos como testes de integração e testes de sanidade. Por final, temos os testes de interface, também conhecidos como testes de aceitação. Esse tipo de lógica faz com que os testes sejam mais eficazes e rápidos.
 
@@ -222,12 +220,12 @@ Claro que para rodar todos esses testes, é melhor automatizar tudo, assim, a ca
 
 <h3 id="tool-js">Javascript</h3>
 
-- [Jasmine](http://jasmine.github.io/edge/introduction.html) - talvez um dos mais conhecidos frameworks para teste em JS, trabalha com BDD (behavior-driven development), ou seja, teste orientado a comportamento.
-- [Mocha](https://mochajs.org/) - outro bastante conhecido, altamente plugável e com várias features excelentes.
+- [Mocha](https://mochajs.org/) - bastante conhecido, altamente plugável e com várias features excelentes.
+- [Jasmine](http://jasmine.github.io/edge/introduction.html) - trabalha com BDD (behavior-driven development), ou seja, teste orientado a comportamento, bastante utilizado também.
 - [Ava](https://github.com/sindresorhus/ava) - como se entitula, um test runner futurista, desenvolvido pelo famoso Sindresorhus, promete ser bem mais veloz que todos os outros.
 - [Tape](https://github.com/substack/tape) - criado pelo Substack, outro com proposta de ser bem pequenino, mas com bastante plugins.
 - [Jest](https://facebook.github.io/jest/) - criado pelo Facebook para realizar testes no React, trabalha em cima de Mocks por default.
-- [QUnit](https://qunitjs.com/) - usada pela galera do JQuery, tendo o [Leo Balter](https://twitter.com/leobalter) como um dos desenvolvedores.
+- [QUnit](https://qunitjs.com/) - usada pela galera do JQuery e vários outros grandes projetos, tendo o [Leo Balter](https://twitter.com/leobalter) como um dos desenvolvedores.
 - [Karma](http://karma-runner.github.io/0.13/index.html) - diferente dos outros, o Karma não serve para escrever os testes e sim para rodá-los em cima de browsers, dos quais inclui até headless browser como o PhantomJS.
 - [CasperJS](http://casperjs.org/) - permite rodar testes de aceitação usando headless browser (PhantomJS e SlimerJS), numa sintaxe bastante simples.
 - [Nightwatch](http://nightwatchjs.org/) - talvez um dos melhores para se fazer testes End-to-End (E2E), onde você faz um teste completo de sua aplicação.
