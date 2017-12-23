@@ -1,4 +1,5 @@
 (function( $, window, undefined ) {
+
   // Menu
   $("a#slide").click(function(){
     $("#sidebar,a#slide,#fade").addClass("slide");

@@ -76,10 +76,6 @@ Dentro desse módulo, teremos como exercício, aplicar todas as coisas aprendida
 
 ### Módulo 6
 
-Iremos escrever uma aplicação com mais detalhes, inteiramente em Javascript e com testes desde o início, facilitando com que você esteja apto a criar aplicações grandes em sua empresa ou projetos pessoais.
-
-### Módulo 7
-
 Será sobre testes em React, iremos utilizar um boilerplate idealizado por mim, chamado [Lyef](https://github.com/lyef/lyef-react-component), onde iremos aprender a criar componentes isolados e desenvolvidos em cima de testes.
 
 Com o curso, a pessoa estará apta a trabalhar em 3 áreas bem distintas no desenvolvimento Javascript (bibliotecas, CLI's e aplicações) e irá poder escrever seus próprios testes durante o desenvolvimento.
@@ -88,11 +84,9 @@ Com o curso, a pessoa estará apta a trabalhar em 3 áreas bem distintas no dese
 
 ### 1) Tem como parcelar o curso?
 
-Tem sim gente, dependendo da bandeira do cartão, pode ser em até 12x. Para isso é só você preencher seus dados do cartão na [página de compra](https://www.eventick.com.br/javascript-com-tdd-na-pratica), que ele irá atualizar para um menu parecido com a imagem abaixo.
+Tem sim gente, dependendo da bandeira do cartão, pode ser em até 12x. Para isso é só você preencher seus dados do cartão na [página de compra](https://www.sympla.com.br/javascript-com-tdd-na-pratica__146668).
 
-![Payment](/assets/img/curso-tdd/payment.png)
-
-### 2) Já tem a ementa? 
+### 2) Já tem a ementa?
 
 A espera acabou e temos a ementa completa, que você pode ver logo acima em [ementa](#ementa).
 
@@ -120,7 +114,7 @@ O curso começa agora e nunca termina! Você quem irá decidir quando começar e
 
 São vários módulos divididos em pequenos vídeos, cada módulo tem o intuito de ensinar algum conceito básico e importante sobre Boas Práticas e Testes. Após todos os módulos, você estará apto a criar aplicações javascript modernas e com qualidade. Se quiser, dá uma olhada nos [cursos disponíveis](https://willianjusten.com.br/cursos), tem cursos gratuitos lá para você poder ver o que acha.
 
---- 
+---
 
 <h2 id="modulo-1">Módulo 1: Boas Práticas</h2>
 
@@ -142,4 +136,4 @@ Cheguei aqui na Irlanda na quarta (07/09) e já fiz taaaanta coisa, que nossa, h
 
 Então né, como já disse no texto acima, eu estou aqui por minha conta, não vim por empresa nenhuma. Muita gente faz até cara estranha quando digo isso. E através da venda dos meus cursos que acabo conseguindo gerar uma renda para poder morar aqui.
 
-E pensando nisso, me ajudando e também ajudando vocês, eu vou deixar o curso com **50% de desconto** durante todo o mês de Setembro, se eu fosse vocês, [comprava agora](https://www.eventick.com.br/javascript-com-tdd-na-pratica) para aproveitar a promoção =D
+E se você se interessou, as vendas estão abertas no [link](https://www.udemy.com/js-com-tdd-na-pratica/?couponCode=LANCAMENTOTDD).

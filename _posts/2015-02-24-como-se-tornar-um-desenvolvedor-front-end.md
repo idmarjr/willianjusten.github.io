@@ -114,7 +114,7 @@ Olha, definir níveis de conhecimento, seja para qualquer profissão é algo bas
 - NodeJS (saber como criar módulos, chamá-los tanto no front quanto no back)
 - Ter sólida experiência em sistemas front como o MEAN Stack
 
-![Gato surpreso](http://ohmygodcats.com/wp-content/uploads/2013/01/Suprised-Catnip-Cat.jpg)
+![Gato surpreso](https://i.imgflip.com/1ih4qs.jpg)
 
 <h2 id="eita">Eita lascou, como aprendo tudo isso?</h2>
 
@@ -185,11 +185,12 @@ A base de tudo, que vai governar a estrutura de todo o sistema. Qualquer desenvo
 - [Codecademy HTML](http://www.codecademy.com/pt-BR/tracks/web)
 - [Dash](https://dash.generalassemb.ly/)
 - [Teamtreehouse](http://teamtreehouse.com/library/topic:learn-html/type:course)
-- [CodeScholl](https://www.codeschool.com/paths/html-css)
+- [CodeSchool](https://www.codeschool.com/paths/html-css)
 - [30 Days to Learn Html and CSS](https://www.youtube.com/watch?v=yTHTo28hwTQ&list=PLgGbWId6zgaWZkPFI4Sc9QXDmmOWa1v5F)
 - [Learn to code Html & CSS](http://learn.shayhowe.com/)
 - [Apostila Web da Caelum](http://www.caelum.com.br/apostila-html-css-javascript/)
 - [Dive into Html5 em Português](http://diveintohtml5.com.br/)
+- [HTML Cheat Sheet](https://digital.com/tools/html-cheatsheet/)
 
 #### Semântica
 - [Use Html5 sectioning elements](http://blog.teamtreehouse.com/use-html5-sectioning-elements)
@@ -357,7 +358,7 @@ Como já deve ter visto, a área de Front End é uma das que mais se movimenta. 
 
 - [Codrops](http://tympanus.net/codrops/)
 - [EchoJS](http://www.echojs.com/)
-- [Html5 Rocks](http://html5rocks.com/)
+- [Google’s Web Fundamentals Program](https://developers.google.com/web)
 - [Css-tricks](http://css-tricks.com/)
 - [Smashing Magazine](http://www.smashingmagazine.com/)
 - [Da2k Blog](http://blog.da2k.com.br/) - PtBr
