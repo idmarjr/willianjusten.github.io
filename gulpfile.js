@@ -1,5 +1,4 @@
-var env         = require('minimist')(process.argv.slice(2)),
-	gulp        = require('gulp'),
+var	gulp        = require('gulp'),
 	plumber     = require('gulp-plumber'),
 	browserSync = require('browser-sync'),
 	stylus      = require('gulp-stylus'),
@@ -9,7 +8,6 @@ var env         = require('minimist')(process.argv.slice(2)),
 	rupture     = require('rupture'),
 	koutoSwiss  = require('kouto-swiss'),
 	prefixer    = require('autoprefixer-stylus'),
-	imagemin    = require('gulp-imagemin'),
 	cp          = require('child_process');
 
 var messages = {
@@ -47,36 +45,26 @@ gulp.task('browser-sync', ['jekyll-build'], function() {
  * Stylus task
  */
 gulp.task('stylus', function(){
-		gulp.src('src/styl/main.styl')
+		gulp.src(['src/styl/home.styl', 'src/styl/posts.styl', 'src/styl/minimal.styl'])
 		.pipe(plumber())
 		.pipe(stylus({
 			use:[koutoSwiss(), prefixer(), jeet(), rupture()],
 			compress: true
 		}))
-		.pipe(gulp.dest('_site/assets/css/'))
+		.pipe(gulp.dest('_includes'))
 		.pipe(browserSync.reload({stream:true}))
-		.pipe(gulp.dest('assets/css'));
+		.pipe(gulp.dest('_includes'));
 });
 
 /**
  * Javascript Task
  */
 gulp.task('js', function(){
-	return gulp.src((env.p) ? 'src/js/**/*.js' : ['src/js/**/*.js', '!src/js/analytics.js'])
+	return gulp.src('src/js/**/*.js')
 		.pipe(plumber())
-		.pipe(concat('main.js'))
+		.pipe(concat('blog.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('assets/js/'));
-});
-
-/**
- * Imagemin Task
- */
-gulp.task('imagemin', function() {
-	return gulp.src('src/img/**/*.{jpg,png,gif}')
-		.pipe(plumber())
-		.pipe(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true }))
-		.pipe(gulp.dest('assets/img/'));
 });
 
 /**
@@ -84,7 +72,7 @@ gulp.task('imagemin', function() {
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-	gulp.watch('src/styl/**/*.styl', ['stylus']);
+	gulp.watch('src/styl/**/*.styl', ['stylus', 'jekyll-rebuild']);
 	gulp.watch('src/js/**/*.js', ['js']);
 	gulp.watch(['**/*.html','index.html', '_includes/*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
@@ -94,3 +82,6 @@ gulp.task('watch', function () {
  * compile the jekyll site, launch BrowserSync & watch files.
  */
 gulp.task('default', ['js', 'stylus', 'browser-sync', 'watch']);
+
+// build to deploy
+gulp.task('build', ['js', 'stylus', 'jekyll-build']);

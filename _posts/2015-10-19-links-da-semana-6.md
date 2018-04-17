@@ -3,7 +3,7 @@ layout: post
 title: "Links da semana #6"
 date: 2015-10-25 19:19:17
 image: '/assets/img/links-da-semana/main.png'
-description: 'Links sobre coisas interessantes que fui vendo pela semana.'
+description: 'Links da semana #6 - Links sobre coisas interessantes que fui vendo pela semana.'
 main-class: 'misc'
 color: '#7AAB13'
 tags:
@@ -31,17 +31,16 @@ Essa semana foi um pouco apertada para mim e ainda fiquei doente o final de sema
 
 ## Design / Inspiracional
 
-- [Landing Folio - Várias Landing Pages para inspiração](http://www.landingfolio.com/)
+- [Landing Folio - Várias Landing Pages para inspiração](https://www.landingfolio.com/)
 - [Lightning Design System - Um design system feito pela Salesforce](http://www.lightningdesignsystem.com/)
 - [Object Oriented UX](http://alistapart.com/article/object-oriented-ux)
-- [Bringing card design to a new level.](http://flyingdog.de/nhp/blog/cards/How_to_Cards_Desktop.php)
 
 ## CSS / SVG
 
 - [Flexbox Grid System for Stylus](http://stylusgrid.com/)
 - [Project Cards Template](https://codyhouse.co/gem/project-cards-template/)
 - [How To Work With SVG Text](http://vanseodesign.com/web-design/how-to-work-with-svg-text/)
-- [CSSgram - library for recreating Instagram filters with CSS filters and blend modes.](http://una.im/CSSgram/)
+- [CSSgram - library for recreating Instagram filters with CSS filters and blend modes.](https://una.im/CSSgram/)
 
 ## Variados
 

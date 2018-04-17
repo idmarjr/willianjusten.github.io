@@ -11,7 +11,7 @@ tags:
 - js
 - tutorial
 categories:
-- Aprendendo ReactJS
+- "Aprendendo ReactJS"
 twitter_text: "ReactJS - Tentando entender o que é? Para que serve? Por onde começar?"
 introduction: "O ReactJS é a onda do momento! Vamos entender o que é? Para que serve? Por onde começar?"
 ---
@@ -82,7 +82,7 @@ Como enfatizado em algumas partes do post, o React serve para criar componentes,
 
 ### Mas como conseguir separar esses componentes e seus subcomponentes?
 
-Da mesma forma que criamos nossas Classes e Métodos, devemos pensar o mesmo para os nossos componentes e seguir o [princípio da responsabilidade única](http://www.devmedia.com.br/arquitetura-o-principio-da-responsabilidade-unica/18700). Onde uma classe deve fazer apenas uma coisa, deve fazê-la bem e deve fazer somente ela.
+Da mesma forma que criamos nossas Classes e Métodos, devemos pensar o mesmo para os nossos componentes e seguir o [princípio da responsabilidade única](https://www.devmedia.com.br/arquitetura-o-principio-da-responsabilidade-unica/18700). Onde uma classe deve fazer apenas uma coisa, deve fazê-la bem e deve fazer somente ela.
 
 ### Exemplo
 
@@ -113,9 +113,4 @@ Essa foi só a primeira parte, para entendermos pelo menos um pouco do que é, o
 
 ## Veja mais posts
 
-[Série sobre React](http://willianjusten.com.br/series/#aprendendo-reactjs)
-
-
-
-
-
+[Série sobre React](https://willianjusten.com.br/series/#aprendendo-reactjs)

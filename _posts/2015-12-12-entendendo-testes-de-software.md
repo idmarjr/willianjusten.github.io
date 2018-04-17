@@ -1,43 +1,47 @@
 ---
 layout: post
-title: "Entendendo Testes de Software"
-date: 2015-12-12 13:49:42
-image: '/imasters-2015/img/visao-programador.png'
-description: 'Para que servem os testes? O que eu ganho com eles? Que tipos de testes existem? O que fazer e o que não fazer.'
-main-class: 'dev'
+date: 2015-12-12T13:49:42.000Z
+image: /assets/img/testes/visao-programador.png
+title: Entendendo Testes de Software
+description: >-
+  Para que servem os testes? O que eu ganho com eles? Que tipos de testes
+  existem? O que fazer e o que não fazer.
+introduction: >-
+  Para que servem os testes? O que eu ganho com eles? Que tipos de testes
+  existem? O que fazer e o que não fazer. Algumas dúvidas importantes para
+  começarmos a brincar nesse mundo dos testes e TDD.
+twitter_text: >-
+  Para que servem os testes? O que eu ganho com eles? O que fazer e o que não
+  fazer?
+main-class: dev
 color: '#637a91'
 tags:
-- tdd
-- dev
-categories:
-- 'Aprendendo Testes'
-twitter_text: 'Para que servem os testes? O que eu ganho com eles? O que fazer e o que não fazer?'
-introduction: 'Para que servem os testes? O que eu ganho com eles? Que tipos de testes existem? O que fazer e o que não fazer. Algumas dúvidas importantes para começarmos a brincar nesse mundo dos testes e TDD.'
+  - tdd
+  - dev
 ---
-
 ## Índice
 
-- [Introdução](#intro)
-- [Qualidade de Software](#qualidade)
-    + [Qualidade para o Cliente](#qualidade-cliente)
-    + [Qualidade para o Chefe](#qualidade-chefe)
-    + [Qualidade para o Desenvolvedor](#qualidade-dev)
-- [Test Driven Development (TDD)](#tdd)
-- [Ciclo de desenvolvimento com TDD](#ciclo)
-- [Por que poucos fazem TDD?](#poucos)
-- [O que ganho com TDD?](#ganho)
-- [Tipos de testes](#tipos)
-    + [Teste Unitário (Unit Test)](#unit)
-    + [Teste de Sanidade (Smoke Test)](#smoke)
-    + [Teste de Integração (Integration Test)](#integracao)
-    + [Teste de Aceitação (Acceptance Test)](#aceitacao)
-- [Mocks](#mocks)
-- [Dicas para se fazer melhores testes](#dicas)
-- [Ferramentas para testar](#ferramentas)
-    + [JS](#tool-js)
-    + [Python](#tool-python)
-    + [Ruby](#tool-ruby)
-- [Conclusão](#conclusao)
+* [Introdução](#intro)
+* [Qualidade de Software](#qualidade)
+  * [Qualidade para o Cliente](#qualidade-cliente)
+  * [Qualidade para o Chefe](#qualidade-chefe)
+  * [Qualidade para o Desenvolvedor](#qualidade-dev)
+* [Test Driven Development (TDD)](#tdd)
+* [Ciclo de desenvolvimento com TDD](#ciclo)
+* [Por que poucos fazem TDD?](#poucos)
+* [O que ganho com TDD?](#ganho)
+* [Tipos de testes](#tipos)
+  * [Teste Unitário (Unit Test)](#unit)
+  * [Teste de Sanidade (Smoke Test)](#smoke)
+  * [Teste de Integração (Integration Test)](#integracao)
+  * [Teste de Aceitação (Acceptance Test)](#aceitacao)
+* [Mocks](#mocks)
+* [Dicas para se fazer melhores testes](#dicas)
+* [Ferramentas para testar](#ferramentas)
+  * [JS](#tool-js)
+  * [Python](#tool-python)
+  * [Ruby](#tool-ruby)
+* [Conclusão](#conclusao)
 
 <h2 id="intro">Introdução</h2>
 
@@ -51,25 +55,25 @@ Pega lá um cafézinho e vem comigo, sei que você não gosta de teoria, mas é 
 
 Antes mesmo de começar a falar sobre Testes, precisamos voltar um pouco e falar sobre Qualidade de Software. A nossa preocupação por ter um sistema de qualidade, que nos fez pensar em métodos para garantir isso e daí nasceram os testes! =D
 
-Esse ano eu tive a oportunidade de palestrar na [Imasters DeveloperWeek 2015 - RJ](http://developerweek.imasters.com.br/rio-de-janeiro/) e falei sobre Qualidade de Software, você pode ver os [slides aqui](http://willianjusten.com.br/imasters-2015/#/). E como a palavra *qualidade* é um termo vago e que possuem diferentes pontos de vista, eu resolvi mostrar algumas dessas visões.
+Esse ano eu tive a oportunidade de palestrar na [Imasters DeveloperWeek 2015 - RJ](http://developerweek.imasters.com.br/rio-de-janeiro/) e falei sobre Qualidade de Software, você pode ver os [slides aqui](https://willianjusten.github.io/imasters-2015/#/). E como a palavra _qualidade_ é um termo vago e que possuem diferentes pontos de vista, eu resolvi mostrar algumas dessas visões.
 
 <h3 id="qualidade-cliente">Qualidade para o cliente</h3>
 
 Para um cliente, ele quer que tudo esteja funcionando, que seja bonito e o principal, que ele não gaste muito com isso. O medidor de qualidade para o cliente é quando ele faz uma cara mais ou menos assim:
 
-![Foto de um cara sorrindo](http://willianjusten.com.br/imasters-2015/img/visao-cliente.gif)
+![Foto de um cara sorrindo](https://willianjusten.github.io/imasters-2015/img/visao-cliente.gif)
 
 <h3 id="qualidade-chefe">Qualidade para o chefe</h3>
 
 Já para o seu chefe/empresa, qualidade é quando você faz as coisas sem demorar muito ou ter que refazer. Quando ele consegue gerar lucros e o cliente está feliz. Uma imagem que demonstra muito bem o que importa (qualidade) para o seu chefe é:
 
-![Um homem deitado no dinheiro](http://willianjusten.com.br/imasters-2015/img/visao-chefe.gif)
+![Um homem deitado no dinheiro](https://willianjusten.github.io/imasters-2015/img/visao-chefe.gif)
 
 <h3 id="qualidade-dev">Qualidade para o desenvolvedor</h3>
 
 Nós desenvolvedores, obviamente vamos ver qualidade aonde? Se você respondeu no código, ponto para você! Quanto mais fácil de ler e entender o código, mais qualidade ele tem para nós. Assim como você ter uma boa documentação. Segue abaixo uma imagem que descreve bastante nossas reações a códigos bons e ruins:
 
-![Uma imagem com duas portas e pessoas discutindo, uma tem várias reclamações pelo código ruim, a outra tem poucas, pois o código é bom.](http://willianjusten.com.br/imasters-2015/img/visao-programador.png)
+![Uma imagem com duas portas e pessoas discutindo, uma tem várias reclamações pelo código ruim, a outra tem poucas, pois o código é bom.](https://willianjusten.github.io/imasters-2015/img/visao-programador.png)
 
 Pensando num código legível, documentação e agilidade, que nasceu o TDD, trazido pelo Kent Beck, na época da ascenção do Método Ágil.
 
@@ -84,7 +88,7 @@ Neste ambiente, destaca-se o TDD, como sendo uma abordagem evolutiva na qual o d
 
 <h2 id="ciclo">Ciclo de desenvolvimento com TDD</h2>
 
-![Flow de Desenvolvimento com TDD](http://willianjusten.com.br/imasters-2015/img/tdd_flow.gif)
+![Flow de Desenvolvimento com TDD](https://willianjusten.github.io/imasters-2015/img/tdd_flow.gif)
 
 Todos que já viram pelo menos um pouco sobre TDD devem ter visto essa imagem. Ela é basicamente a estrutura do funcionamento da cultura do TDD. Possuindo 3 grandes passos:
 
@@ -120,7 +124,7 @@ Essa pode parecer uma frase um pouco controversa, mas não é. Como o flow de de
 O TDD encoraja que você pense antes de desenvolver a solução e que você sempre crie as soluções mais simples. Existe uma frase muito importante no TDD que é:
 
 > "Se são necessárias muitas linhas de código criando objetos para uma simples
-asserção, então há algo de errado."
+> asserção, então há algo de errado."
 
 Isso faz com que você já saiba se está indo na direção certa para construção da solução ou se ela está fortemente acoplada e precisa ser modularizada/simplificada.
 
@@ -136,7 +140,7 @@ Como o próprio ciclo do TDD já sugere, a última etapa é a refatoração. Ent
 
 O TDD se baseia principalmente nos testes unitários, que de fato são a base para o desenvolvimento orientado por testes. Mas existem outros testes tão importantes quanto. Martin Fowler, que é basicamente um dos maiores apoiadores do TDD, disse o seguinte: a maioria do desenvolvimento sempre foi pensada na interface e, com isso, os testes mais criados também eram os de interface. Mas o problema é que esses testes são muito lentos e nós não queremos isso. Nós queremos respostas eficientes e rápidas, por isso, os testes unitários precisam ser o de maior de número e os mesmos precisam ser bem rápidos. Seguindo esse pensamento, ele desenvolveu a seguinte pirâmide:
 
-![Pirâmide de testes](http://andimarek.github.io/angular-testing/images/pyramid.png)
+![Pirâmide de testes](/assets/img/pyramid.png)
 
 Nessa pirâmide, podemos ver que os testes unitários formam a base, seguidos pelos testes de serviço, que podem ser entendidos como testes de integração e testes de sanidade. Por final, temos os testes de interface, também conhecidos como testes de aceitação. Esse tipo de lógica faz com que os testes sejam mais eficazes e rápidos.
 
@@ -220,29 +224,29 @@ Claro que para rodar todos esses testes, é melhor automatizar tudo, assim, a ca
 
 <h3 id="tool-js">Javascript</h3>
 
-- [Mocha](https://mochajs.org/) - bastante conhecido, altamente plugável e com várias features excelentes.
-- [Jasmine](http://jasmine.github.io/edge/introduction.html) - trabalha com BDD (behavior-driven development), ou seja, teste orientado a comportamento, bastante utilizado também.
-- [Ava](https://github.com/sindresorhus/ava) - como se entitula, um test runner futurista, desenvolvido pelo famoso Sindresorhus, promete ser bem mais veloz que todos os outros.
-- [Tape](https://github.com/substack/tape) - criado pelo Substack, outro com proposta de ser bem pequenino, mas com bastante plugins.
-- [Jest](https://facebook.github.io/jest/) - criado pelo Facebook para realizar testes no React, trabalha em cima de Mocks por default.
-- [QUnit](https://qunitjs.com/) - usada pela galera do JQuery e vários outros grandes projetos, tendo o [Leo Balter](https://twitter.com/leobalter) como um dos desenvolvedores.
-- [Karma](http://karma-runner.github.io/0.13/index.html) - diferente dos outros, o Karma não serve para escrever os testes e sim para rodá-los em cima de browsers, dos quais inclui até headless browser como o PhantomJS.
-- [CasperJS](http://casperjs.org/) - permite rodar testes de aceitação usando headless browser (PhantomJS e SlimerJS), numa sintaxe bastante simples.
-- [Nightwatch](http://nightwatchjs.org/) - talvez um dos melhores para se fazer testes End-to-End (E2E), onde você faz um teste completo de sua aplicação.
-- [Protractor](http://www.protractortest.org/#/) - outro para testes E2E, mais focado para o AngularJS.
+* [Mocha](https://mochajs.org/) - bastante conhecido, altamente plugável e com várias features excelentes.
+* [Jasmine](http://jasmine.github.io/edge/introduction.html) - trabalha com BDD (behavior-driven development), ou seja, teste orientado a comportamento, bastante utilizado também.
+* [Ava](https://github.com/sindresorhus/ava) - como se entitula, um test runner futurista, desenvolvido pelo famoso Sindresorhus, promete ser bem mais veloz que todos os outros.
+* [Tape](https://github.com/substack/tape) - criado pelo Substack, outro com proposta de ser bem pequenino, mas com bastante plugins.
+* [Jest](https://facebook.github.io/jest/) - criado pelo Facebook para realizar testes no React, trabalha em cima de Mocks por default.
+* [QUnit](https://qunitjs.com/) - usada pela galera do JQuery e vários outros grandes projetos, tendo o [Leo Balter](https://twitter.com/leobalter) como um dos desenvolvedores.
+* [Karma](http://karma-runner.github.io/0.13/index.html) - diferente dos outros, o Karma não serve para escrever os testes e sim para rodá-los em cima de browsers, dos quais inclui até headless browser como o PhantomJS.
+* [CasperJS](http://casperjs.org/) - permite rodar testes de aceitação usando headless browser (PhantomJS e SlimerJS), numa sintaxe bastante simples.
+* [Nightwatch](http://nightwatchjs.org/) - talvez um dos melhores para se fazer testes End-to-End (E2E), onde você faz um teste completo de sua aplicação.
+* [Protractor](http://www.protractortest.org/#/) - outro para testes E2E, mais focado para o AngularJS.
 
 <h3 id="tool-python">Python</h3>
 
-- [Unit testing framework](https://docs.python.org/2/library/unittest.html) - talvez a mais comum e conhecida do Python, até por já vir inclusa com a linguagem. Bastante poderosa e simples de se utilizar.
-- [Pytest](http://pytest.org/latest/) - outra bastante utilizada no universo python, possui várias integrações e ótima sintaxe.
-- [Splinter](https://splinter.readthedocs.org/en/latest/) - criada por uma galera da Globo para realizar testes E2E, vale uma olhada.
-- [Locust](http://locust.io/) - ferramenta para teste de carga.
+* [Unit testing framework](https://docs.python.org/2/library/unittest.html) - talvez a mais comum e conhecida do Python, até por já vir inclusa com a linguagem. Bastante poderosa e simples de se utilizar.
+* [Pytest](http://pytest.org/latest/) - outra bastante utilizada no universo python, possui várias integrações e ótima sintaxe.
+* [Splinter](https://splinter.readthedocs.io/en/latest/) - criada por uma galera da Globo para realizar testes E2E, vale uma olhada.
+* [Locust](https://locust.io/) - ferramenta para teste de carga.
 
 <h3 id="tool-ruby">Ruby</h3>
 
-- [Test::Unit](http://test-unit.github.io/) - outra que vem por padrão na linguagem, sendo amplamente utilizada.
-- [RSpec](http://rspec.info/) - framework para testes BDD em Ruby, tem uma ótima documentação.
-- [Minitest](http://docs.seattlerb.org/minitest/) - é uma suite completa de testes, para TDD, BDD, mocks e benchmarking.
+* [Test::Unit](http://test-unit.github.io/) - outra que vem por padrão na linguagem, sendo amplamente utilizada.
+* [RSpec](http://rspec.info/) - framework para testes BDD em Ruby, tem uma ótima documentação.
+* [Minitest](http://docs.seattlerb.org/minitest/) - é uma suite completa de testes, para TDD, BDD, mocks e benchmarking.
 
 <h2 id="conclusao">Conclusão</h2>
 

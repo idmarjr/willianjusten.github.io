@@ -17,13 +17,13 @@ introduction: "Quem já acessou esse blog uma vez na vida já viu como eu amo m�
 
 ## Introdução
 
-Primeiro de tudo, gostaria muito de agradecer a receptividade do [post de ontem](http://willianjusten.com.br/o-que-ninguem-diz-para-iniciantes/), foram muitos compartilhamentos, likes, comentários tanto no blog, como nos posts dos grupos, bate papos privados e até doações! Fico bastante feliz que eu ajude e inspire outras pessoas, eu escrevo no blog muito por amor ao que faço e pela vontade de ajudar a todos.
+Primeiro de tudo, gostaria muito de agradecer a receptividade do [post de ontem](https://willianjusten.com.br/o-que-ninguem-diz-para-iniciantes/), foram muitos compartilhamentos, likes, comentários tanto no blog, como nos posts dos grupos, bate papos privados e até doações! Fico bastante feliz que eu ajude e inspire outras pessoas, eu escrevo no blog muito por amor ao que faço e pela vontade de ajudar a todos.
 
 Bom, sem mais delongas, senão vou chorar. Vou escrevendo enquanto escuto uma [Playlist de ChillStep](https://open.spotify.com/user/kent1337/playlist/6IjDl5eRczFdgZkKYXhuHZ) muito boa.
 
 ## Paixão por Música
 
-Acho que nem preciso dizer que amo Música né? Praticamente todos os meus posts possuem uma playlist do que estou ouvindo. Trabalhei numa empresa de crowdfunding de shows chamada [Queremos](http://www.queremos.com.br/) / [WeDemand](http://www.wedemand.com/) e já perdi a conta de quantos shows já fui.
+Acho que nem preciso dizer que amo Música né? Praticamente todos os meus posts possuem uma playlist do que estou ouvindo. Trabalhei numa empresa de crowdfunding de shows chamada [Queremos](https://www.queremos.com.br/) / [WeDemand](https://www.wedemand.com/) e já perdi a conta de quantos shows já fui.
 
 Sempre fui apaixonado por música, qualquer tipo, mas uma em si, sempre me chamava muito a atenção, que eram as dos jogos. Eu cresci com nintendinho, super nintendo, por aí vai. E aquelas músicas clássicas de 8 bits eram incríveis para mim. Eu queria muito aprender a criar aquelas músicas e fazer as minhas próprias. Foi aí que eu conheci o [Guitar Pro](https://www.guitar-pro.com/en/index.php) e comecei a criar músicas MIDI, que ficavam bem parecidas com as dos jogos, para mim era mágico.
 
@@ -67,20 +67,3 @@ O pessoal do FrontinSampa já viu e já aprovou! Então, para quem quiser me ver
 É isso aí galera, espero que curtam o projetinho e utilizem bastante ele, em breve eu estarei fazendo posts ensinando como se trabalhar com Audio Visualization para ter mais links feitos por vocês lá no projeto.
 
 Não esqueçam de dar star lá (sim, estou mendigando, mas de coração tá <3). [Link da Awesome Audio Visualization](https://github.com/willianjusten/awesome-audio-visualization)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

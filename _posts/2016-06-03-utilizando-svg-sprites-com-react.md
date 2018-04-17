@@ -11,7 +11,7 @@ tags:
 - js
 - tutorial
 categories:
-- Aprendendo ReactJS
+- "Aprendendo ReactJS"
 twitter_text: 'Aprenda a utilizar ícones SVG dentro do React de forma fácil.'
 introduction: 'Aprenda a utilizar os famosos ícones SVG dentro do React de forma bem fácil.'
 ---
@@ -20,15 +20,15 @@ introduction: 'Aprenda a utilizar os famosos ícones SVG dentro do React de form
 
 Fala pessoal, para dar início as escritas sobre React, resolvi unir com outra paixão minha, que é o SVG. Então, qual forma melhor de explicar alguma coisa, do que fazendo algo na prática?
 
-Se você ainda não viu nenhum post meu sobre React, eu estou voltando a escrever dentro [dessa série](http://willianjusten.com.br/series/#aprendendo-reactjs), olha lá.
+Se você ainda não viu nenhum post meu sobre React, eu estou voltando a escrever dentro [dessa série](https://willianjusten.com.br/series/#aprendendo-reactjs), olha lá.
 
 Vou falando e ouvindo [um álbum de remixes do Ludovico Einaudi](https://open.spotify.com/album/5vvLGd70sOZSZddNnIejFv), bom demais esse som =D
 
 ## Sprites em SVG
 
-Já fiz dois posts sobre esse tipo de técnica em SVG. Um sobre [sistemas de ícones em SVG](http://willianjusten.com.br/sistemas-de-icones-em-svg/) e um outro sobre a [própria técnica](http://willianjusten.com.br/usando-svg-sprites/) de utilizar sprites em SVG.
+Já fiz dois posts sobre esse tipo de técnica em SVG. Um sobre [sistemas de ícones em SVG](https://willianjusten.com.br/sistemas-de-icones-em-svg/) e um outro sobre a [própria técnica](https://willianjusten.com.br/usando-svg-sprites/) de utilizar sprites em SVG.
 
-A prática consiste basicamente em você ter um arquivo com vários ícones, famoso sprite, com cada ícone sendo um `symbol` do SVG referenciado pelo seu id. 
+A prática consiste basicamente em você ter um arquivo com vários ícones, famoso sprite, com cada ícone sendo um `symbol` do SVG referenciado pelo seu id.
 
 Um exemplo de sprite svg seria:
 
@@ -40,7 +40,7 @@ Um exemplo de sprite svg seria:
 </svg>
 ```
 
-Se você quiser ver o código extendido, só clicar [neste link](http://willianjusten.com.br/assets/img/react-svg/sprite.svg).
+Se você quiser ver o código extendido, só clicar [neste link](https://willianjusten.com.br/assets/img/react-svg/sprite.svg).
 
 Se você reparar, cada ícone tem o seu próprio `symbol` e também sua própria `viewBox`, que serve para delimitar seu tamanho e área. Para você utilizar um ícone dessa forma, basta você utilizar a tag `use`, seguindo esse exemplo:
 
@@ -54,7 +54,7 @@ No lugar do `xlink:href`, você passa o id do ícone que você deseja. Para cham
 
 ```html
 <svg>
-    <use xlink:href="http://willianjusten.com.br/assets/img/react-svg/sprite.svg#icon-lamp" />
+    <use xlink:href="https://willianjusten.com.br/assets/img/react-svg/sprite.svg#icon-lamp" />
 </svg>
 ```
 
@@ -66,13 +66,13 @@ Não queremos criar um componente React que simplesmente jogue a nossa chamada d
 
 ## O que são Stateless Functions?
 
-As `stateless functions` são de fato, funções sem estado. Ué? Como assim? Você num tinha dito que os componentes de React tinham estado? Mostrou até [um pouco da API](http://willianjusten.com.br/o-basico-da-api-do-reactjs/).
+As `stateless functions` são de fato, funções sem estado. Ué? Como assim? Você num tinha dito que os componentes de React tinham estado? Mostrou até [um pouco da API](https://willianjusten.com.br/o-basico-da-api-do-reactjs/).
 
 ![Gato com dúvida](https://warosu.org/data/fa/img/0063/58/1371640339134.png)
 
 No React você pode definir seus componentes como funções puras do Javascript, isso mesmo. Sem precisar criar classe, definir estados, nem nada. Você escreve como se fosse Javascript puro mesmo. Vamos dar uma olhada na sintaxe de como funciona:
 
-```js
+```jsx
 function helloMessage(props) {
     return <div>Hello {props.name}</div>;
 }
@@ -83,7 +83,7 @@ Reparem, eu criei uma função chamada `helloMessage`, que recebe um parâmetro 
 
 Reescrevendo o código acima em ES6, ficaria assim:
 
-```js
+```jsx
 const HelloMessage = (props) => <div>Hello {props.name}</div>;
 ReactDOM.render(<HelloMessage name="Willian" />, document.getElementById('app'));
 ```
@@ -96,11 +96,11 @@ Essa forma simplificada é destinada para se criar componentes que não vão ter
 
 É muito simples meu caro, se já sabemos como chamar nossos sprites, basta passar essa forma para dentro do React. Escrevendo em ES6 ficaria:
 
-```js
+```jsx
 // Definimos a url onde se encontra o sprite
-const url = 'http://willianjusten.com.br/assets/img/react-svg/sprite.svg';
+const url = 'https://willianjusten.com.br/assets/img/react-svg/sprite.svg';
 
-// Aqui criamos um componente 
+// Aqui criamos um componente
 // que irá gerar nosso ícone SVG
 const Icon = (props) => (
   <svg viewBox='0 0 16 16' className={`icon icon-${props.icon}`}>
@@ -108,7 +108,7 @@ const Icon = (props) => (
   </svg>
 );
 
-// Aqui chamamos nossos ícones 
+// Aqui chamamos nossos ícones
 // passando a propriedade "icon"
 ReactDOM.render(
   <div class="icons">
@@ -129,13 +129,10 @@ Segue o exemplo funcional:
 <p data-height="300" data-theme-id="11319" data-slug-hash="bedoLV" data-default-tab="result" data-user="willianjusten" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/willianjusten/pen/bedoLV/">SVG Sprites with React</a> by Willian Justen de Vasconcellos (<a href="http://codepen.io/willianjusten">@willianjusten</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-Se você estiver com dúvidas no ES6, como funciona esse tal de `const`, `fat arrow` e agora esse tal de `template string`, aconselho o [Blog do Nipher](http://nipher.io/series), onde ele explica isso muito bem.
+Se você estiver com dúvidas no ES6, como funciona esse tal de `const`, `fat arrow` e agora esse tal de `template string`, aconselho o [Blog do Nipher](https://nipher.io/series), onde ele explica isso muito bem.
 
 ## Conclusão
 
 Bom galera, post bastante simples, mas muito importante, tanto para o ecossistema React, quanto para o SVG. É importante que você tente ao máximo criar funções puras para ter mais performance na sua aplicação React. E também é bastante importante que você utilize Sprites SVG para diminuir o número de requisições e também possuir ícones que se adaptam em qualquer tipo de tela.
 
-Se você estiver com dúvidas em SVG e quiser saber mais, aproveita que até dia **05/06** meu curso está com o desconto da pré-venda, você pode saber [mais informações aqui](http://willianjusten.com.br/pre-venda-curso-de-svg/).
-
-
-
+Se você estiver com dúvidas em SVG e quiser saber mais, aproveita que até dia **05/06** meu curso está com o desconto da pré-venda, você pode saber [mais informações aqui](https://willianjusten.com.br/pre-venda-curso-de-svg/).

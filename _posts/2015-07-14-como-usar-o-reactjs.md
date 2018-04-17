@@ -11,7 +11,7 @@ tags:
 - js
 - tutorial
 categories:
-- Aprendendo ReactJS
+- "Aprendendo ReactJS"
 twitter_text: "As diferentes formas de se usar e se iniciar um projeto com ReactJS."
 introduction: "As diferentes formas de se usar e se iniciar um projeto com ReactJS. Veja usando o famoso JSX, sem ele e alguns boilerplates famosos."
 ---
@@ -20,40 +20,28 @@ introduction: "As diferentes formas de se usar e se iniciar um projeto com React
 
 A trilha sonora fica por conta de [Tame Impala](https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb), uma banda bastante psicodélica e que fez um dos melhores shows que já pude assistir =)
 
-Como prometido, vou dar continuidade a série de posts sobre ReactJS e para acompanhar tanto essa série, como outras, é só ir no link [series](http://willianjusten.com.br/series/).
+Como prometido, vou dar continuidade a série de posts sobre ReactJS e para acompanhar tanto essa série, como outras, é só ir no link [series](https://willianjusten.com.br/series/).
 
 ## Iniciando
 
-No [post anterior](http://willianjusten.com.br/comecando-com-react/) eu falei um pouquinho do que era o React, como ele funciona e uma nova forma de se pensar em componentes que ele traz. Só que ficou faltando o mais importante, como usar?
+No [post anterior](https://willianjusten.com.br/comecando-com-react/) eu falei um pouquinho do que era o React, como ele funciona e uma nova forma de se pensar em componentes que ele traz. Só que ficou faltando o mais importante, como usar?
 
 Nesse post irei dar algumas alternativas de como trabalhar com o ReactJS, para assim já podermos começar a trabalhar ainda mais com ele. Lembrando que nenhuma das formas é a melhor, cada uma tem sua utilidade em determinado momento.
 
-Não se preocupe com todos os detalhes dos códigos, pois iremos ver mais detalhadamente em outros posts. Não curto muito exemplos de Hello World, já que não ensinam nada, mas para esse caso será útil, visto que só quero mostrar as formas de uso. Estes exemplos estão no [zip do getting started](https://facebook.github.io/react/downloads/react-15.1.0.zip) que existe na documentação do React, mas que não são explicados.
+Não se preocupe com todos os detalhes dos códigos, pois iremos ver mais detalhadamente em outros posts. Não curto muito exemplos de Hello World, já que não ensinam nada, mas para esse caso será útil, visto que só quero mostrar as formas de uso.
 
-Se você quiser se adiantar um pouco, aconselho a ir dando uma lida na [API do React](http://facebook.github.io/react/docs/top-level-api.html), que contém todos os comandos primários que vamos utilizar nos exemplos.
+Se você quiser se adiantar um pouco, aconselho a ir dando uma lida na [API do React](https://reactjs.org/docs/react-api.html), que contém todos os comandos primários que vamos utilizar nos exemplos.
 
 ### Arquivos
 
-Para usar o React da forma mais simples, basta baixar uma de suas versões na [página de downloads](https://facebook.github.io/react/downloads.html).
+Para usar o React da forma mais simples, basta baixar esse [template html deles](https://raw.githubusercontent.com/reactjs/reactjs.org/master/static/html/single-file-example.html), mas lembrando que é só uma página html com alguns links para carregar.
 
-Ou você pode utilizar de uma CDN também:
-
-**update: (02/06/2016)** - O react se desmembrou em react e react-dom desde o lançamento do post. Agora qualquer tratamento de renderização e DOM são tratados no react-dom.
+Você também pode utilizar a CDN deles, [aqui tem os links](https://reactjs.org/docs/cdn-links.html)
 
 ```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 ```
-
-O carregamento do Babel serve para poder transpilar em tempo real, o seu código.
-
-Existe também como baixar via [Bower](http://bower.io/):
-
-```bash
-bower install --save react
-```
-
 
 ### Básico sem JSX
 
@@ -67,27 +55,25 @@ Essa forma é a mais básica de todas e funciona como se fosse usar uma bibliote
 E logo após a chamada da biblioteca, coloque o seu script, seja ele inline ou chamando de um outro arquivo.
 
 ```js
-<script>
-  var ExampleApplication = React.createClass({
-    render: function() {
-      var elapsed = Math.round(this.props.elapsed  / 100);
-      var seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0' );
-      var message =
-        'O React está rodando com sucesso há ' + seconds + ' seconds.';
-        return React.DOM.p(null, message);
-      }
-  });
+var ExampleApplication = React.createClass({
+  render: function() {
+    var elapsed = Math.round(this.props.elapsed  / 100);
+    var seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0' );
+    var message =
+      'O React está rodando com sucesso há ' + seconds + ' seconds.';
+      return React.DOM.p(null, message);
+    }
+});
 
-  var ExampleApplicationFactory = React.createFactory(ExampleApplication);
-  var start = new Date().getTime();
+var ExampleApplicationFactory = React.createFactory(ExampleApplication);
+var start = new Date().getTime();
 
-  setInterval(function() {
-    ReactDOM.render(
-      ExampleApplicationFactory({elapsed: new Date().getTime() - start}),
-      document.getElementById('container')
-    );
-  }, 50);
-</script>
+setInterval(function() {
+  ReactDOM.render(
+    ExampleApplicationFactory({elapsed: new Date().getTime() - start}),
+    document.getElementById('container')
+  );
+}, 50);
 ```
 
 **update: (02/06/2016)** - na linha `16` atualizamos para utilizar o `ReactDOM.render()`, pois ele agora é separado do React original.
@@ -96,13 +82,13 @@ Utilizando o React em JS cru, necessitamos de algumas manipulações para criaç
 
 Como disse anteriormente, não se preocupe com todo o código, visto que irei falar sobre cada detalhe mais tarde. Só se atente as linhas `8`, `12` e `17`, que são as mais específicas para o caso de React sem JSX.
 
-Na linha `8`, estamos utilizando um factory built-in do React para selecionar a tag `p` no DOM e inserir o valor de `message`. Na linha `12` estamos criando um elemento de React com o método [createFactory](http://facebook.github.io/react/docs/top-level-api.html#react.createfactory), que nos permitirá extendê-lo e utilizá-lo sempre que quisermos. Na linha `17`, estamos chamando o elemento criado, passando a propriedade `elapsed` e seu valor.
+Na linha `8`, estamos utilizando um factory built-in do React para selecionar a tag `p` no DOM e inserir o valor de `message`. Na linha `12` estamos criando um elemento de React com o método [createFactory](https://reactjs.org/docs/react-api.html#react.createfactory), que nos permitirá extendê-lo e utilizá-lo sempre que quisermos. Na linha `17`, estamos chamando o elemento criado, passando a propriedade `elapsed` e seu valor.
 Essa sintaxe é mais verbosa e precisaremos escrever um pouco mais, mas ela é Javascript puro e os mais puristas, que reclamam de Html no JS, não podem reclamar.
 
 
 ### Utilizando JSX
 
-O JSX é uma sintaxe criada para o React, que se assemelha ao XML e que facilita bastante o nosso workflow. Se quiser saber um pouco mais sobre, aconselho [este link](https://facebook.github.io/react/docs/jsx-in-depth.html).
+O JSX é uma sintaxe criada para o React, que se assemelha ao XML e que facilita bastante o nosso workflow. Se quiser saber um pouco mais sobre, aconselho [este link](https://reactjs.org/docs/jsx-in-depth.html).
 
 Para usar essa sintaxe diretamente no Browser, precisamos do Babel e do React chamados no nosso html:
 
@@ -116,25 +102,23 @@ Podemos ter o JSX de duas formas: inline, utilizando a tag `<script type="text/j
 
 **update: (02/06/2016)** - antigamente era utilizado o JSXTransformer, mas agora o Babel fica encarregado dessa mudança. Então, no `type` do script, precisamos colocar `text/babel`, para que o Babel consiga <interpretar class=""></interpretar>
 
-```js
-<script type="text/babel">
-  var ExampleApplication = React.createClass({
-    render: function() {
-      var elapsed = Math.round(this.props.elapsed  / 100);
-      var seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0' );
-      var message =
-        'React has been successfully running for ' + seconds + ' seconds.';
-        return <p>{message}</p>;
-      }
-  });
-  var start = new Date().getTime();
-  setInterval(function() {
-    ReactDOM.render(
-      <ExampleApplication elapsed={new Date().getTime() - start} />,
-      document.getElementById('container')
-    );
-  }, 50);
-</script>
+```jsx
+var ExampleApplication = React.createClass({
+  render: function() {
+    var elapsed = Math.round(this.props.elapsed  / 100);
+    var seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0' );
+    var message =
+      'React has been successfully running for ' + seconds + ' seconds.';
+      return <p>{message}</p>;
+    }
+});
+var start = new Date().getTime();
+setInterval(function() {
+  ReactDOM.render(
+    <ExampleApplication elapsed={new Date().getTime() - start} />,
+    document.getElementById('container')
+  );
+}, 50);
 ```
 
 As grandes diferenças nessa sintaxe estão na linha `8` e `14`. Na linha `8`, não necessitamos mais de utilizar função para criar um elemento, bastando apenas utilizar a tag html que quisermos. E na linha `14` é onde criamos nosso componente, que está recebendo suas devidas propriedades.
@@ -146,25 +130,23 @@ Com o ES6 vindo aí com força total, o React passou a dar suporte a partir da [
 
 **update: (02/06/2016)** - antes utilizámos o parâmetro `harmony=true`, agora é só passar que o tipo é `text/babel` para funcionar.
 
-```js
-<script type="text/babel">
-  class ExampleApplication extends React.Component {
-    render() {
-      var elapsed = Math.round(this.props.elapsed  / 100);
-      var seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0' );
-      var message =
-        `React has been successfully running for ${seconds} seconds.`;
-        return <p>{message}</p>;
-    }
+```jsx
+class ExampleApplication extends React.Component {
+  render() {
+    var elapsed = Math.round(this.props.elapsed  / 100);
+    var seconds = elapsed / 10 + (elapsed % 10 ? '' : '.0' );
+    var message =
+      `React has been successfully running for ${seconds} seconds.`;
+      return <p>{message}</p>;
   }
-  var start = new Date().getTime();
-    setInterval(() => {
-      ReactDOM.render(
-      <ExampleApplication elapsed={new Date().getTime() - start} />,
-      document.getElementById('container')
-    );
-  }, 50);
-</script>
+}
+var start = new Date().getTime();
+  setInterval(() => {
+    ReactDOM.render(
+    <ExampleApplication elapsed={new Date().getTime() - start} />,
+    document.getElementById('container')
+  );
+}, 50);
 ```
 
 O grande diferencial aqui fica por conta da criação de uma classe `ExampleApplication` e a extensão que fazemos de `React.Component` para criar o nosso componente. A utilização de `${}` para concatenar uma variável e o uso do fat arrow `=>` para nos facilitar e escrever menos, também são algumas das vantagens do ES6.
@@ -241,4 +223,4 @@ Bom, agora que já sabemos para que serve e diversas formas de usar, já poderem
 
 ## Veja mais posts
 
-[Série sobre React](http://willianjusten.com.br/series/#aprendendo-reactjs)
+[Série sobre React](https://willianjusten.com.br/series/#aprendendo-reactjs)

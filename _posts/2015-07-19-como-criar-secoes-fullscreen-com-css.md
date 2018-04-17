@@ -14,7 +14,7 @@ twitter_text: "Como criar seções fullscreen com CSS e chamar atenção dos usu
 introduction: "Vários sites famosos criam divisões grandes na tela que chamam bastante atenção, vamos aprender a fazer essas seções também, usando só css com as famosas viewport units."
 ---
 
-## Introdução 
+## Introdução
 
 O som de hoje fica com uma banda brasileira que mescla MPB e Rock e chama [Maglore](https://open.spotify.com/artist/24me6m3bV7l2rnUwaXV0Tj), curti bastante o som deles, espero que curtam também =)
 
@@ -22,8 +22,8 @@ O post de hoje é extra, ele não era esperado, mas recebi um email de mais uma 
 
 Se você quiser pular já para o resultado está aqui:
 
-* [Usando CSS simples](http://willianjusten.com.br/labs/full-screen-sections/height-100.html)
-* [Usando Viewport Units](http://willianjusten.com.br/labs/full-screen-sections/viewport.html)
+* [Usando CSS simples](https://willianjusten.com.br/labs/full-screen-sections/height-100.html)
+* [Usando Viewport Units](https://willianjusten.com.br/labs/full-screen-sections/viewport.html)
 
 ## Dúvida
 
@@ -43,11 +43,6 @@ Seguem alguns exemplos de sites que utilizam dessa técnica:
 
 ![Cameo](/assets/img/header-full/header-1.png)
 [Cameo - Vimeo](https://vimeo.com/cameo)
-
----
-
-![Take It app](/assets/img/header-full/header-2.png)
-[Take It App](http://www.takeitapp.co/en)
 
 ---
 
@@ -95,7 +90,7 @@ header {
 }
 ```
 
-Segue um [exemplo](http://willianjusten.com.br/labs/full-screen-sections/height-100.html) de como ficará no final. O código está, é claro, no meu [github](https://github.com/willianjusten/labs/blob/gh-pages/full-screen-sections/height-100.html). Lembrando que é um código experimental, sempre separe o css do seu html, use meta-tags, classes bem definidas, wai-aria e etc =)
+Segue um [exemplo](https://willianjusten.com.br/labs/full-screen-sections/height-100.html) de como ficará no final. O código está, é claro, no meu [github](https://github.com/willianjusten/labs/blob/gh-pages/full-screen-sections/height-100.html). Lembrando que é um código experimental, sempre separe o css do seu html, use meta-tags, classes bem definidas, wai-aria e etc =)
 
 Se você se perguntar, mas como centralizou o texto, tem um [site irado](http://howtocenterincss.com/) que ajuda como centralizar qualquer coisa só com CSS.
 
@@ -124,21 +119,9 @@ Para termos uma altura de 80% da tela usando o viewport units é bastante simple
 }
 ```
 
-Basta só essa linha para tudo ficar perfeito. Se você quiser ver um exemplo, está aqui o [link](http://willianjusten.com.br/labs/full-screen-sections/viewport.html) e o [código no github](https://github.com/willianjusten/labs/blob/gh-pages/full-screen-sections/viewport.html).
+Basta só essa linha para tudo ficar perfeito. Se você quiser ver um exemplo, está aqui o [link](https://willianjusten.com.br/labs/full-screen-sections/viewport.html) e o [código no github](https://github.com/willianjusten/labs/blob/gh-pages/full-screen-sections/viewport.html).
 
 ## Conclusão
 
 Bom, esse foi um post rapidinho, espero que ajude quem ainda tinha essa dúvida e para lembrar que CSS é demais e podemos fazer muitas coisas com ele =)
 Se alguém tiver alguma dúvida sobre qualquer coisa, pode mandar nos comentários, email ou redes sociais e eu terei o maior prazer de tentar ajudar.
-
-
-
-
-
-
-
-
-
-
-
-

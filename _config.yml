@@ -1,8 +1,10 @@
 # Site settings
 title: Willian Justen - Desenvolvedor Front End
 email: willianjustenqui@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Um blog de um desenvolvedor Front End e entusiasta de novas tecnologias.
+description: >
+  Um blog de um desenvolvedor Front End, fã de SVG, Javascript, React
+  e novas tecnologias. Nômade Digital, atualmente trabalhando na Toptal
+  e viajando o mundo.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://willianjusten.com.br" # the base hostname & protocol for your site
 twitter_username: willian_justen
@@ -20,22 +22,45 @@ compress_html:
   endings: []
   profile: false
 
+files_to_cache:
+ - '/assets/js/blog.js'
+
+pages_to_cache:
+  - '/cursos/'
+  - '/series/'
+  - '/about/'
+  - '/tags/'
+  - '/offline/index.html'
+
 # Links to include in menu navigation
 # For external links add external: true
 links:
   - title: Home
     url: /
   - title: Cursos
-    url: /cursos
+    url: /cursos/
   - title: Séries
-    url: /series
+    url: /series/
   - title: Tags
-    url: /tags
+    url: /tags/
   - title: Sobre mim
-    url: /about
+    url: /about/
 
 collections:
   - cursos
 
 # exclude my node related stuff
-exclude: ['package.json', 'src', 'node_modules', 'vendor/bundle/ruby']
+exclude: [
+  'package.json',
+  'src',
+  'node_modules',
+  'vendor/bundle/ruby',
+  'package-lock.json',
+  'Readme.md',
+  'gulpfile.js',
+  'initpost.sh',
+  'testlinks.sh',
+  '.travis.yml'
+]
+
+include: ['_redirects', '_headers']

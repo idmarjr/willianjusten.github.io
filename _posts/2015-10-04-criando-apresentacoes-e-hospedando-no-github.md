@@ -28,7 +28,7 @@ Bom, eu não tenho as melhores aptidões em design e confesso que ver aquele mon
 
 Sempre que eu vou a eventos, me interesso em ter os slides depois para poder ler com mais calma e até mesmo fazer testes quando são códigos expostos ali. Então eu queria disponibilizar meus slides de forma fácil também, sendo assim, eu vi que realmente precisava de algo web.
 
-Eu já havia visto um padrão de algumas palestras e todas elas eram web, fui caçar melhor e então encontrei o amado [RevealJS](http://lab.hakim.se/reveal-js/). Junto com ele achei alguns outros, como o [Slides](http://slides.com/), que é mantido pela galera do RevealJS, só que possui uma UI para poder montar os slides. Também encontrei o [Spectable](http://spectacle.surge.sh/#/), que foi baseado no RevealJS, mas feito todo em React <3 (preciso testá-lo depois!)
+Eu já havia visto um padrão de algumas palestras e todas elas eram web, fui caçar melhor e então encontrei o amado [RevealJS](https://lab.hakim.se/reveal-js/). Junto com ele achei alguns outros, como o [Slides](http://slides.com/), que é mantido pela galera do RevealJS, só que possui uma UI para poder montar os slides. Também encontrei o [Spectable](http://spectacle.surge.sh/#/), que foi baseado no RevealJS, mas feito todo em React <3 (preciso testá-lo depois!)
 
 ## Coisas legais que o RevealJS tem!
 
@@ -39,7 +39,7 @@ Muitos me perguntavam, mas poxa, o Keynote tem várias coisas legais e você vai
 - Permissão de exportar em PDF
 - Notas do Editor em tela separada + countdown para saber o tempo que já passou
 - Sintaxe colorida para código <3
-- Vários e vários plugins! 
+- Vários e vários plugins!
 
 ## Sobre o RevealJS
 
@@ -141,7 +141,7 @@ Só ir no [github deles](https://github.com/hakimel/reveal.js) e mandar baixar, 
 
 ```html
 !doctype html>
-<html lang="pt-br">    
+<html lang="pt-br">
 <head>
     <meta charset="utf-8">
 </head>
@@ -157,13 +157,13 @@ Só ir no [github deles](https://github.com/hakimel/reveal.js) e mandar baixar, 
     <meta charset="utf-8">
     <title>Reveal.js Slide Demo</title>
     <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/default.css" id="theme"> 
+    <link rel="stylesheet" href="css/theme/default.css" id="theme">
 </head>
 ```
 
 Existem diferentes temas, basta escolher dentro da pasta de "themes".
 
-#### 4 - Crie o Markup básico 
+#### 4 - Crie o Markup básico
 
 Como dito um pouco mais acima, precisamos ter um markup com as classes `reveal` e `slides` para tudo passar a funcionar direitinho.
 
@@ -198,12 +198,12 @@ Reveal.initialize({
     progress: true, // mostra uma barra de progresso
     center: true, // centraliza os slides
     transition: 'slide' // none/fade/slide/convex/concave/zoom
-}); 
-``` 
+});
+```
 
 #### 8 - Hospedando no Github
 
-Como sabemos, o Github tem um sisteminha legal chamado [Github Pages](https://pages.github.com/), que permite hospedar páginas estáticas nele. Para hospedarmos algo lá, basta criarmos um projetinho com o nome que desejarmos e ao invés de usar a branch master, usarmos a branch `gh-pages`. Após isso, o projeto vai ficar hospedado em `nomedousuario.github.io/nome-do-projeto`, caso você tenha um domínio configurado, ele ficará como `dominio/nome-do-projeto`. Segue um exemplo de uma das minhas últimas apresentações [Frontend Carioca 2015](http://willianjusten.com.br/frontend-carioca-2015/).
+Como sabemos, o Github tem um sisteminha legal chamado [Github Pages](https://pages.github.com/), que permite hospedar páginas estáticas nele. Para hospedarmos algo lá, basta criarmos um projetinho com o nome que desejarmos e ao invés de usar a branch master, usarmos a branch `gh-pages`. Após isso, o projeto vai ficar hospedado em `nomedousuario.github.io/nome-do-projeto`, caso você tenha um domínio configurado, ele ficará como `dominio/nome-do-projeto`. Segue um exemplo de uma das minhas últimas apresentações [Frontend Carioca 2015](https://willianjusten.com.br/frontend-carioca-2015/).
 
 ---
 
@@ -217,19 +217,19 @@ Eu uso o [Jade](http://jade-lang.com/) para escrever meus slides separados de fo
 
 ### Como funciona o Boilerplate?
 
-#### 1 - Estrutura 
+#### 1 - Estrutura
 
 Todos os arquivos importantes ficam dentro da pasta [src](https://github.com/Qualy-org/qualy-presenter/tree/master/src), que é onde ficam os arquivos ainda não compilados.
 
 A pasta [src/templates](https://github.com/Qualy-org/qualy-presenter/tree/master/src/templates) é onde ficam os [includes](https://github.com/Qualy-org/qualy-presenter/tree/master/src/templates/inc), estes são responsáveis pela inclusão dos scripts, arquivos de css, descrições, meta-tag e etc.
 
-E o arquivo [src/templates/index.jade](https://github.com/Qualy-org/qualy-presenter/blob/master/src/templates/index.jade) é onde eu monto e faço a chamada dos meus slides.
+E o arquivo [src/templates/index.pug](https://github.com/Qualy-org/qualy-presenter/blob/master/src/templates/index.pug) é onde eu monto e faço a chamada dos meus slides.
 
 Cada slide fica separado na pasta [src/slides](https://github.com/Qualy-org/qualy-presenter/tree/master/src/slides) e pode ser chamado nessa index na ordem que eu desejar, assim fica tudo mais arrumadinho e me facilita a deletar/chamar ou não um slide =)
 
-Os slides podem ser escritos usando a sintaxe do Jade ou tambem em html normal, então se você não souber escrever em jade, não se preocupe, escreva em html e tudo irá funcionar igual, basta lembrar de quando for incluir um slide na `index.jade`, coloque a extensão `.html` no final do arquivo. Segue exemplo:
+Os slides podem ser escritos usando a sintaxe do Pug ou tambem em html normal, então se você não souber escrever em Pug, não se preocupe, escreva em html e tudo irá funcionar igual, basta lembrar de quando for incluir um slide na `index.pug`, coloque a extensão `.html` no final do arquivo. Segue exemplo:
 
-```html
+```pug
 doctype html
 html
     include inc/head
@@ -245,7 +245,7 @@ Quando o arquivo for compilado, ele irá ler normalmente e juntar tudo para voc�
 
 #### 2 - Baixando o Boilerplate e instalando
 
-Basta ir em [Qualy Presenter](https://github.com/Qualy-org/qualy-presenter/), clonar ou baixar os arquivos na sua máquina. 
+Basta ir em [Qualy Presenter](https://github.com/Qualy-org/qualy-presenter/), clonar ou baixar os arquivos na sua máquina.
 
 Depois basta criar um repositório no seu github com os arquivos iniciais. Segue os passos básicos:
 
@@ -257,10 +257,10 @@ Vá em `Create new repository` na parte superior do github e preencha os dados c
 // inicializando um repositório git no seu local
 git init
 
-// adicionando todos os arquivos 
+// adicionando todos os arquivos
 git add .
 
-// commitando tudo 
+// commitando tudo
 git commit -m "initial commit"
 
 // adicionando o repositório remoto do github
@@ -278,16 +278,13 @@ Como eu disse, uso o Gulp para fazer as mágicas, então a primeira coisa a se f
 npm install
 ```
 
-Depois de tudo instalado, é só rodar o Gulp. Ele possui alguns comandos separados, mas em geral o comando principal utilizado será só `gulp`, que é responsável por fazer todas as compilações necessárias e levantar um servidor com livereload em `localhost:3000`. Os arquivos compilados irão para uma pasta `build`, que irá conter só os arquivos finais que são as pastas: `css`, `js`, `images` e `index.html`.
+Depois de tudo instalado, é só rodar `npm start`. Ele possui alguns comandos separados, mas em geral o comando principal utilizado será só `npm start`, que é responsável por fazer todas as compilações necessárias e levantar um servidor com livereload em `localhost:3000`. Os arquivos compilados irão para uma pasta `build`, que irá conter só os arquivos finais que são as pastas: `css`, `js`, `images` e `index.html`.
 
-Depois de tudo feito e compilado, só precisamos fazer o deploy para o github, para isso também temos 2 comandos:
+Depois de tudo feito e compilado, só precisamos fazer o deploy para o github, para isso temos o seguinte comando:
 
-- `gulp deploy-pages`: faz deploy dos arquivos de `build` para o branch `gh-pages`.
-- `gulp deploy-src`: faz deploy dos arquivos de `src` para o branch `master`.
+- `npm run deploy`: faz deploy dos arquivos de `build` para o branch `gh-pages`.
 
 
 ## Conclusão
 
-Bom, é só isso pessoal, espero que esse post ajude e que passem a criar mais apresentações direto no browser ao invés de usarem softwares proprietários. E é claro, quem quiser contribuir no meu [boilerplate](https://github.com/willianjusten/reveal-boilerplate), ficarei eternamente grato! Não sabe o que pode melhorar? Fala comigo que eu com certeza tenho uma lista de desejos, que inclusive deveria colocar lá nas issues, mas estou com preguiça, me pergunta que eu falo e você preenche para mim pelo menos, já vai estar ajudando ahuahuahua
-
-
+Bom, é só isso pessoal, espero que esse post ajude e que passem a criar mais apresentações direto no browser ao invés de usarem softwares proprietários. E é claro, quem quiser contribuir no meu [boilerplate](https://github.com/Qualy-org/qualy-presenter/), ficarei eternamente grato! Não sabe o que pode melhorar? Fala comigo que eu com certeza tenho uma lista de desejos, que inclusive deveria colocar lá nas issues, mas estou com preguiça, me pergunta que eu falo e você preenche para mim pelo menos, já vai estar ajudando ahuahuahua

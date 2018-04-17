@@ -49,17 +49,17 @@ introduction: 'Escrevendo CSS sem perder a sanidade. Com essa introdução, Rico
 
 <h2 id="intro">Introdução</h2>
 
-Hey Hey pessoal! Para não perder o ritmo de carnaval, vamos a mais um post! Como alguns reclamaram que não teve playlist no post antigo, já vou deixando aqui a playlist que estou ouvindo agora [Trabalhando até Tarde](https://open.spotify.com/user/spotifybrazilian/playlist/7wvnJuxgxbCSOmO6JltKGt), e nossa, que playlist foda demais! Várias músicas mesclando um eletro, chill, house, etc.
+Hey Hey pessoal! Para não perder o ritmo de carnaval, vamos a mais um post! Como alguns reclamaram que não teve playlist no post antigo, já vou deixando aqui a playlist que estou ouvindo agora [Trabalhando até Tarde](https://open.spotify.com/user/22g5lp4mpz3qkneqipjafud6a/playlist/6fLTsHRyGMtOOF0oUtcCjW?si=ha-ZW1idT-ubl79Ea5e2QA), e nossa, que playlist foda demais! Várias músicas mesclando um eletro, chill, house, etc.
 
 O post de hoje vai ser relacionado a uma metodologia CSS que eu não conhecia e passei a conhecer lá na HUGE. Confesso que a primeira, segunda, terceira e até a quarta vez que eu vi, achei bem ruinzinha. Mas há uns dias eu peguei para ler, fazer uns testes e até assistir uns vídeos e bom, fui convertido!
 
-Resolvi fazer esse post por alguns motivos e eles foram: 
+Resolvi fazer esse post por alguns motivos e eles foram:
 
 - Fixar um pouco da metodologia (sim! eu uso meu blog para estudar, você deveria também =p)
 - Não achei NADA em português!
 - Por que não fazer? xD
 
-O post será fortemente baseado na [ÓTIMA documentação do RSCSS](http://rscss.io/), se você não gostar da forma com que escrevo ou quiser simplesmente partir para o original, só clicar ali =)
+O post será fortemente baseado na [ÓTIMA documentação do RSCSS](https://rscss.io/), se você não gostar da forma com que escrevo ou quiser simplesmente partir para o original, só clicar ali =)
 
 Eu irei escrever os exemplos em **SCSS**, porém eles podem ser portados para qualquer pre-processador e até mesmo CSS puro <s>tem maluco para tudo.</s>
 
@@ -89,7 +89,7 @@ Atire a primeira pedra quem nunca fez um grande uso de nesting como:
 .nav {
     ul {
         li {
-            a { 
+            a {
                 ...
             }
         }
@@ -112,7 +112,7 @@ O problema de se fazer isso ali, é que quando temos um grande número de propri
             border: 1px solid #ccc;
             padding: 10px 50px;
 
-            a { 
+            a {
                 color: #333;
 
                 &:hover {
@@ -156,7 +156,7 @@ Se temos o markup limpo, colocando só classes base e usando nesting, acabamos t
 
 <h2 id="e-se">E se existisse uma maneira de ter os dois limpos?</h2>
 
-Dessa forma nasceu o [RSCSS](http://rscss.io/)! A ideia principal dele é criar um componente pai, que irá governar os elementos internos a partir do `child selector >`, também chamado de seletor filho ou descendente. Se você não conhece esse seletor, aconselho ler esse post [seletores css importantes para aprender](http://willianjusten.com.br/alguns-seletores-css-importantes-para-aprender/), que eu fiz no ano passado.
+Dessa forma nasceu o [RSCSS](https://rscss.io/)! A ideia principal dele é criar um componente pai, que irá governar os elementos internos a partir do `child selector >`, também chamado de seletor filho ou descendente. Se você não conhece esse seletor, aconselho ler esse post [seletores css importantes para aprender](https://willianjusten.com.br/alguns-seletores-css-importantes-para-aprender/), que eu fiz no ano passado.
 
 O mesmo exemplo do card usando essa metodologia ficaria:
 
@@ -168,7 +168,7 @@ O mesmo exemplo do card usando essa metodologia ficaria:
 
 A primeira coisa que você deve fazer é pensar em tudo como se fossem componentes. Considere cada pedaço de sua interface como um componente individual. Segue exemplo de um form dentro de uma navbar:
 
-![Search Form dentro de uma navbar](http://rscss.io/images/component-example.png)
+![Search Form dentro de uma navbar](/assets/img/rscss/component-example.png)
 
 <h4 id="comp-name">1.1 Nomeando Componentes</h4>
 
@@ -182,7 +182,7 @@ Os componentes deverão ter **pelo menos duas palavras**, separadas por um traç
 
 Elementos são coisas dentro do seu componente:
 
-![Elementos dentro do search-form](http://rscss.io/images/component-elements.png)
+![Elementos dentro do search-form](/assets/img/rscss/component-elements.png)
 
 <h4 id="elementos-name">2.1 Nomeando elementos</h4>
 
@@ -233,7 +233,7 @@ Use classe sempre que possível. Tags são ok, mas podem vir com uma pequena per
 
 Componentes podem ter variações, assim como os elementos também.
 
-![Exemplo de variações](http://rscss.io/images/component-modifiers.png)
+![Exemplo de variações](/assets/img/rscss/component-modifiers.png)
 
 <h4 id="variacoes-name">3.1 Nomeando variações</h4>
 
@@ -268,7 +268,7 @@ Alguns dos motivos de se usar são:
 
 <h3 id="componentes-nested">4. Componentes aninhados (nested)</h3>
 
-![Componentes aninhados](http://rscss.io/images/component-nesting.png)
+![Componentes aninhados](/assets/img/rscss/component-nesting.png)
 
 ```html
 <div class='article-link'>
@@ -284,7 +284,7 @@ Algumas vezes precisamos ter componentes dentro de componentes. Aqui vão alguma
 
 <h4 id="nested-variacoes">4.1 Variações</h4>
 
-Evite modificar o componente interno através do commponente principal. 
+Evite modificar o componente interno através do commponente principal.
 
 ```scss
 .article-header {
@@ -343,7 +343,7 @@ Assim, seu elemento `.submit` irá receber todas as propriedades que precisa, de
 
 <h3 id="layouts">5. Layouts</h3>
 
-![Exemplo de cards em layouts](http://rscss.io/images/layouts.png)
+![Exemplo de cards em layouts](/assets/img/rscss/layouts.png)
 
 <h4 id="layouts-evite">5.1 Evite propriedades de posicionamento</h4>
 
@@ -406,7 +406,7 @@ O RSCSS não tem uma premissa forte para estrutura não, tendo somente como úni
 }
 ```
 
-E, então chamar esses componentes usando o glob matching: 
+E, então chamar esses componentes usando o glob matching:
 
 ```scss
 @import 'components/*';
@@ -425,6 +425,3 @@ Repare que o nesting de só até dois elementos foi respeitado, que o componente
 
 Bom galera, sei que o post ficou grandinho, eu mesmo não esperava fazer tão grande, acabou que eu basicamente traduzi toda a documentação e falei um pouquinho mais até. Entenda que assim como toda metodologia, ela pode funcionar ou não para você, a ideia aqui é passar mais uma opção para que você escolha a que melhor se adaptar. Eu não gostei muito quando vi, hoje já estou achando bastante simples e eficiente.
 Outro ponto importante é, se você trabalha com uma equipe, não saia mudando tudo sem avisar, comunique a todos, mostre os pontos e, caso tenha um consenso, sigam todos o mesmo padrão.
-
-
-

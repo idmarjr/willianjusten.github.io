@@ -46,9 +46,9 @@ Segue um exemplo da diferença entre a criação de um círculo via forma básic
         cx="28.1"
         cy="28.1"
         r="27.6"/>
- 
+
 <!-- versus -->
- 
+
 <path fill="#FFFFFF"
       stroke="#000"
       d="M55.7,28.1
@@ -62,11 +62,11 @@ Um exemplo bem bacana sobre a importância da otimização e o quão impactante 
 
 A logo inicial, possuía vários pontos e detalhes:
 
-![Logo antiga do Google](http://i.kinja-img.com/gawker-media/image/upload/s--zmSvRcRR--/c_scale,fl_progressive,q_80,w_800/1416113051534017317.png)
+![Logo antiga do Google](https://i.kinja-img.com/gawker-media/image/upload/s--zmSvRcRR--/c_scale,fl_progressive,q_80,w_800/1416113051534017317.png)
 
 Para melhor performance, a Google resolveu trabalhar com formas básicas, diminuindo e muito o uso de pontos e paths.
 
-![Nova Logo do Google](http://i.kinja-img.com/gawker-media/image/upload/s--IcQEd58x--/c_scale,fl_progressive,q_80,w_800/1416113051641962533.png)
+![Nova Logo do Google](https://i.kinja-img.com/gawker-media/image/upload/s--IcQEd58x--/c_scale,fl_progressive,q_80,w_800/1416113051641962533.png)
 
 ## 2 - Converta textos para Outlines... Ou não...
 
@@ -149,7 +149,7 @@ Para que isso não aconteça, você precisa garantir que a artboard tem as mesma
 
 Para encaixar a artboard ao desenho:
 
-- Selecione toda a arte 
+- Selecione toda a arte
 - Vá em **Object > Artboards** e escolha a opção **Fit to Artwork Bounds**
 
 ## 7 - Use bons nomes, grupos e convencões nas camadas
@@ -200,8 +200,8 @@ Por exemplo, se você for criar um Sprite de SVG para um sistema de ícones, exi
 Você pode ler mais sobre essas técnicas:
 
 - [An Overview of SVG Sprite Creation Techniques](https://24ways.org/2014/an-overview-of-svg-sprite-creation-techniques/)
-- [Usando SVG Sprites](http://willianjusten.com.br/usando-svg-sprites/)
-- [Sistema de ícones em SVG](http://willianjusten.com.br/sistemas-de-icones-em-svg/)
+- [Usando SVG Sprites](https://willianjusten.com.br/usando-svg-sprites/)
+- [Sistema de ícones em SVG](https://willianjusten.com.br/sistemas-de-icones-em-svg/)
 
 ## Otimizar ou não otimizar...
 
@@ -225,7 +225,3 @@ Designers e desenvolvedores podem ser melhores amigos. A natureza do SVG requer 
 ## Conclusão
 
 Bom galera, espero que esse artigo tenha ajudado a vocês. Que no futuro vocês usam os SVG's mais otimizados do mundo e façam projetos maravilhosos, sempre com uma boa comunicação entre designers e desenvolvedores. Deixo também um obrigado a [Sara Soueidan](https://twitter.com/SaraSoueidan), que é uma grande evangelizadora de SVG e que sempre traz um conteúdo excelente para nossa área.
-
-
-
-

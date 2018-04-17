@@ -11,7 +11,7 @@ tags:
 - js
 - tutorial
 categories:
-- Aprendendo ReactJS
+- "Aprendendo ReactJS"
 twitter_text: "Aprenda um pouco mais sobre os principais métodos do ReactJS."
 introduction: "Aprenda um pouco mais sobre a API do React e como começar a brincar."
 ---
@@ -20,7 +20,7 @@ introduction: "Aprenda um pouco mais sobre a API do React e como começar a brin
 
 Para animar um pouco, a trilha sonora escolhida é o [novo cd do Tame Impala - Currents](https://open.spotify.com/album/0rxKf57PZvWEoU8v3m5W2q), aproveitando que lançou essa semana.
 
-Como prometido, vou dar continuidade a série de posts sobre ReactJS e para acompanhar tanto essa série, como outras, é só ir no link [series](http://willianjusten.com.br/series/).
+Como prometido, vou dar continuidade a série de posts sobre ReactJS e para acompanhar tanto essa série, como outras, é só ir no link [series](https://willianjusten.com.br/series/).
 
 Nos posts anteriores eu falei um pouco do que é o React e as formas de utilizá-lo em um projeto, agora eu irei mostrar e explicar um pouco da API do React para podermos começar a brincadeira.
 
@@ -44,13 +44,13 @@ render(
 
 O método `render` é um dos métodos mais importantes do React e que será responsável por renderizar elementos. Ele recebe 3 parâmetros, que são o elemento a ser criado, o local onde será inserido no DOM e uma função de callback, que é chamada logo após a renderização.
 
-Um detalhe importante aqui é que, caso o elemento já exista no DOM, o render somente irá atualizar as partes novas no DOM, seguindo o algoritmo de diff, comentado no [primeiro post](http://willianjusten.com.br/comecando-com-react/).
+Um detalhe importante aqui é que, caso o elemento já exista no DOM, o render somente irá atualizar as partes novas no DOM, seguindo o algoritmo de diff, comentado no [primeiro post](https://willianjusten.com.br/comecando-com-react/).
 
 Segue um [vídeo em inglês](http://learnreact.com/lessons/1-render-getting-started), explicando este método.
 
 ### Render sem JSX - React.createElement
 
-```js
+```jsx
 ReactDOM.render(
     React.createElement('h1', null, "Hello World!"),
     document.getElementById("content")
@@ -63,7 +63,7 @@ Segue um [vídeo em inglês](http://learnreact.com/lessons/2-createelement), fal
 
 ### Render com JSX
 
-```js
+```jsx
 ReactDOM.render(
     <h1>Hello World!</h1>,
     document.getElementById("content")
@@ -80,7 +80,7 @@ ReactClass createClass(object specification)
 
 Serve para criar um componente dada uma especificação. Um componente implementa um método render que retorna um filho único. Esse filho pode ter uma estrutura arbitrária. A vantagem deste método é que nos permite já criar componentes para serem reaproveitados.
 
-```js
+```jsx
 var Hello = React.createClass({
     render: function() {
       return (
@@ -103,7 +103,7 @@ Segue um [vídeo em inglês](http://learnreact.com/lessons/4-createclass), expli
 
 No ES6, nós ganhamos classes para o nosso lindo javascript e, com isso, conseguimos extender métodos para essa classe, permitindo também a criação de componentes reutilizáveis, conforme o exemplo a seguir:
 
-```js
+```jsx
 class Hello extends React.Component {
     render(){
         return (
@@ -131,7 +131,7 @@ Repare que eu criei diferentes containers para que cada elemento fosse renderiza
 
 Já que é tudo JS, podemos usar o próprio JS para brincar dentro do render, como, por exemplo, receber um array e iterar nele para poder renderizar uma lista.
 
-```js
+```jsx
 var frutas = ['Banana', 'Maçã', 'Uva'];
 
 ReactDOM.render(
@@ -155,7 +155,7 @@ No exemplo, eu tenho um array `frutas` e através do comando `map`, eu itero e m
 
 Quando utilizamos nossos componentes no React, nós podemos adicionar atributos a eles, dos quais chamamos de `props`. Esses atributos ficam disponíveis para nosso componente através do `this.props` e podem ser usados no método de `render` para renderizar dados dinâmicos, de acordo com o quisermos passar.
 
-```js
+```jsx
 var Hello = React.createClass({
     render: function () {
         return (
@@ -205,7 +205,7 @@ Existem mais métodos na API, basta dar uma [olhada aqui](https://facebook.githu
 
 Já tendo os conceitos acima, conseguimos criar um simples timer. Segue o código e vamos destrinchá-lo:
 
-```js
+```jsx
 var Timer = React.createClass({
 
     getInitialState: function(){
@@ -270,6 +270,4 @@ Tem um curso do [Fernando Daciuk](https://twitter.com/fdaciuk) que é foda para 
 
 ## Veja mais posts
 
-[Série sobre React](http://willianjusten.com.br/series/#aprendendo-reactjs)
-
-
+[Série sobre React](https://willianjusten.com.br/series/#aprendendo-reactjs)

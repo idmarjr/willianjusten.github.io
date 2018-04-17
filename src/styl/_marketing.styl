@@ -1,27 +1,26 @@
 .marketing
     text-align: center
-    background: url('../img/marketing-bg.jpeg') center center
+    background: url('/assets/img/marketing-bg.jpeg') center center
     background-attachment: fixed
     padding: 80px 0
     color: #fff
     margin: 50px 0
-    &-svg
-        background-image: url('../img/pre-venda.png')
-        background-position: center center
     h1,
     h2
         text-shadow: 3px 3px #328287
     h2
         margin-bottom: 50px
-    &-js
-        background-image: url('../img/cursos/js-tdd-bg.png')
+
+    &-git
+        background-image: url('/assets/img/cursos/git-real-life-pattern.png')
         background-position: left center
         background-repeat-x: no-repeat
-        background-color: #f7db3c
+        background-size: cover
+        background-color: #2B5082
         h1,
         h2
             text-shadow: 1px 3px 5px #000
-            
+
     .btn-marketing
         background: darken(#328287, 30%)
         color: #fff
@@ -32,10 +31,10 @@
         transition: all .2s
         &:hover
             background: #328287
-        &.btn-js
-            background: #000
+        &.btn-git
+            background: #0a326b
             &:hover
-                background: #504f4f
+                background: lighten(#0a326b, 10%)
 
 .container-donation
     display: table

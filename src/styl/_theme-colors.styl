@@ -2,7 +2,6 @@ themes = {
     post-jekyll: #B31917,
     post-css: #2DA0C3,
     post-js: #D6BA32,
-    post-html: #EB7728,
     post-svg: #7D669E,
     post-dev: #637a91,
     post-misc: #7AAB13
@@ -44,9 +43,9 @@ for theme, category-color in themes
         .share a
             &:hover svg
                 fill category-color
-                
+
         body
-            &.search-overlay 
+            &.search-overlay
                 &:after
                     +below(cut)
                         background-color category-color
@@ -54,7 +53,7 @@ for theme, category-color in themes
             fill category-color
         .cursos-menu
             color category-color
-            
+
         .box-body
             h2
                 color category-color
@@ -64,6 +63,8 @@ for theme, category-color in themes
                 &:hover
                     color: #fff
                     background: category-color
+        .related-post a
+            color category-color
         aside
             background-color category-color
             nav li a:hover

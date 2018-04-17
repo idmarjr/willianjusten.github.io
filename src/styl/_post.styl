@@ -9,7 +9,8 @@ $padding-title-header
     position relative
     top rem(500px)
     background #fff
-.post-content
+.post-content,
+.frame-content
     padding rem(40px) 0
     img
         max-width 100%
@@ -20,14 +21,14 @@ $padding-title-header
         padding 0 rem(20px)
         margin 0 auto rem(30px)
         mainFont(300)
-        font-size rem(18px)
+        font-size rem(20px)
         line-height 2
-        letter-spacing 0.01rem
+        letter-spacing rem(1.1px)
         +above(cut)
             font-size rem(20px)
-    li 
+    li
         padding rem(10px) 0
-        & > ul 
+        & > ul
             margin-bottom 0
     p,li
         color texts
@@ -47,7 +48,7 @@ $padding-title-header
         display inline-block
         content ''
         color main
-        background-image url('../img/external.svg')
+        background-image url('/assets/img/external.svg')
         background-size 100%
         margin-left rem(5px)
         width rem(18px)
@@ -55,7 +56,7 @@ $padding-title-header
     iframe
         margin-top rem(30px)
         width 100%
-    #twitter-widget-0, 
+    #twitter-widget-0,
     .instagram-media
     .twitter-tweet
     	margin 20px auto !important
@@ -111,11 +112,11 @@ $padding-title-header
         th, td
             border rem(2px) solid #ccc
             padding rem(5px)
-    
+
     td > pre
         padding 0
         margin 0
-    
+
     td.gutter.gl
         padding-right rem(25px)
         line-height rem(24px)
@@ -150,3 +151,6 @@ $padding-title-header
         float right
         +below(cut)
             display none
+
+iframe[src*='ads-iframe']
+    display: none

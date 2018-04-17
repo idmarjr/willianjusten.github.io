@@ -20,7 +20,7 @@ Ontem conversando com o [Fernando Daciuk](http://blog.da2k.com.br/), começamos 
 
 ## Histórico
 
-Como disse no meu [primeiro post](http://willianjusten.com.br/making-of-parte-1/), meu primeiro curso foi bem diferente do que eu faço atualmente, foi Química Industrial, mas vou falar um pouco dele, porque foi fundamental para mim. Eu tinha 17 anos quando passei para a faculdade, resolvi me mudar de cidade (Petrópolis -> Niterói) só para poder fazer o curso. Foi uma experiência completamente nova, eu nunca tinha saído de casa, ainda mais tão novo e eu estudava em lugares bem pequenos, quando vi a imensidão da UFF, com seus inúmeros Campus, foi algo bastante diferente para mim.
+Como disse no meu [primeiro post](https://willianjusten.com.br/making-of-parte-1/), meu primeiro curso foi bem diferente do que eu faço atualmente, foi Química Industrial, mas vou falar um pouco dele, porque foi fundamental para mim. Eu tinha 17 anos quando passei para a faculdade, resolvi me mudar de cidade (Petrópolis -> Niterói) só para poder fazer o curso. Foi uma experiência completamente nova, eu nunca tinha saído de casa, ainda mais tão novo e eu estudava em lugares bem pequenos, quando vi a imensidão da UFF, com seus inúmeros Campus, foi algo bastante diferente para mim.
 
 Sempre fui um cara que passava em tudo com grande facilidade, fiz o vestibular praticamente sem me preparar como meus amigos e mesmo assim passei em várias faculdades e principalmente a que eu queria, que era a UFF. E esse foi o meu primeiro baque na faculdade. Meu primeiro período teve uma das matérias conhecidas como a mais carrasca de todas, que é Cálculo I e é claro que eu levei bomba na primeira prova, mas não foi coisa pouca não, eu tirei 0,3 de 10,0. Aquilo feriu demais o meu orgulho e a partir dali comecei a criar uma pequena rotina de estudos e fui um dos poucos da turma que conseguiu passar. Isso me ajudou a ver a importância dos estudos, dedicação e foco, coisa que eu nem dava bola antes.
 
@@ -61,9 +61,7 @@ Na faculdade aprenderemos conceitos e paradigmas que são mais difíceis de sere
 
 Assim como você pode acabar não fazendo faculdade e se tornar um cara de sucesso como Bill Gates, Steve Jobs, Mark Zuckerberg...Você também pode fracassar feio e não conquistar nada na sua vida. Não devemos comparar casos a parte com a nossa realidade, não que fazendo faculdade você será bem sucedido, isso será conquistado com o seu esforço.
 
-Existe uma palestra muito famosa do Jobs, em que ele fala um pouquinho da sua experiência e como ele deixou a faculdade para estudar caligrafia, vale assistir.
-
-<div class='embed-container'><iframe style="width: 100% !important; height: 400px" src='http://www.youtube.com/embed/PX_jsFtCzO8' frameborder='0' allowfullscreen></iframe></div>
+Existe uma [palestra muito famosa do Jobs](https://www.youtube.com/watch?v=66f2yP7ehDs), em que ele fala um pouquinho da sua experiência e como ele deixou a faculdade para estudar caligrafia, vale assistir.
 
 ## Já sou velho e trabalho com isso tem 20 anos
 
@@ -94,4 +92,3 @@ Durante a criação do post, acabei achando alguns vídeos legais e excelentes p
 * [O que aprendi em Harvard - Jorge Paulo Lemann](https://www.youtube.com/watch?v=rhaeYj7cln0) - **ASSISTA**
 * [Faculdade de informática. fazer ou não fazer? - Leandro Oriente](http://leandrooriente.com/faculdade-de-informatica-fazer-ou-nao-fazer/)
 * [Devo fazer faculdade? - Fabio Akita](http://www.akitaonrails.com/2009/04/17/off-topic-devo-fazer-faculdade#.VNYHTFPF88Y)
-

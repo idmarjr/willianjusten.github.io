@@ -39,17 +39,17 @@ Bom, eu enviei sei lá quando, mas fiquei meses sem receber resposta. Como toda 
 
 Eu confesso que estou num momento super embolado, estou prestes a me mudar, também terminando um projeto com um amigo, além de ter palestrado direto em Julho e Agosto. Então, como todo brasileiro, eu fui deixando os slides para a última hora. Como eu sou muiiiito chato com conteúdo, fiz e refiz meus slides várias vezes. É um tema que eu gosto bastante, então tinha tantos exemplos para colocar, mas que ao mesmo tempo eu achava que ficaria massivo...
 
-Enfim chegou um dia antes de eu embarcar e como eu sou de Petrópolis, combinei com um amigo que iria ficar na casa dele, porque meu vôo ia ser 6:30 da manhã. Mas, é claro que não foi bem assim, meus amigos que iam voar junto comigo resolveram sair para comer, e acabamos encontrando outros 2 amigos devs também, resultado? Ficamos jogando sinuca e conversando até super tarde e praticamente fomos virados para o aeroporto. Lá tivemos uma pequena parada para capturar um Sandslash (faz parte né xD) e então embarcamos! Segue foto minha e dos meus amigos, [Jonas Mendes](http://nipher.io/) e [Gabriel Godoy](http://gabrielgodoy.com/).
+Enfim chegou um dia antes de eu embarcar e como eu sou de Petrópolis, combinei com um amigo que iria ficar na casa dele, porque meu vôo ia ser 6:30 da manhã. Mas, é claro que não foi bem assim, meus amigos que iam voar junto comigo resolveram sair para comer, e acabamos encontrando outros 2 amigos devs também, resultado? Ficamos jogando sinuca e conversando até super tarde e praticamente fomos virados para o aeroporto. Lá tivemos uma pequena parada para capturar um Sandslash (faz parte né xD) e então embarcamos! Segue foto minha e dos meus amigos, [Jonas Mendes](https://nipher.io/) e [Gabriel Godoy](http://gabrielgodoy.com/).
 
 ![Eu e meus 2 amigos no avião](/assets/img/brazil-js-16/aviao.jpg)
 
-### Chegada e Teste dos slides 
+### Chegada e Teste dos slides
 
 Cheguei na quinta bem cedinho e fui recepcionado pelo Jaydson com um micro-ônibus para me levar ao hotel junto com meus amigos, foi ali que começou a cair a ficha que eu ia palestrar no maior evento de Javascript do mundo! Ficamos um pouco no hotel e fomos almoçar numa churrascaria SUPER BARATA e que recomendo chamada Giovanaz (dicas do will para turistar =p).
 
 A tarde teve uma coletiva lá no shopping e também deu para testar o projetor e o som, para saber como iria ficar. E...deu TUDO errado! O contraste estava muito ruim nos slides, não dava para ver praticamente nada, o tamanho também tinha dado erro e cortado algumas coisas, confesso que fiquei bastante nervoso e triste. Eu só fiquei um pouco mais feliz, pois quando eu comecei a passar pelos exemplos com música, o Jake Archibald saiu correndo de um ponta até perto do palco para ver o que estava rolando, isso foi super legal <3
 
-Mas, como nem tudo são flores, eu precisava voltar para o Hotel e refazer todos os slides que estavam ruins (90%), só que o pessoal todo tinha combinado de sair e conhecer um pouquinho da cidade, mas eu sabia que se eu não ficasse refazendo, o dia seguinte ia ser um desastre. Falei para os meus amigos que não ia dar para sair, aí que o [Jonas Mendes](http://nipher.io/) e o [Márcio Ribeiro](http://shiz.co/) ficaram comigo no hotel ajudando a refazer e ainda dando opiniões do que podia mudar, ficamos até muito tarde fazendo isso, mas no final de tudo, já estávamos rindo e eu estava bem aliviado que aparentemente estava tudo bom.
+Mas, como nem tudo são flores, eu precisava voltar para o Hotel e refazer todos os slides que estavam ruins (90%), só que o pessoal todo tinha combinado de sair e conhecer um pouquinho da cidade, mas eu sabia que se eu não ficasse refazendo, o dia seguinte ia ser um desastre. Falei para os meus amigos que não ia dar para sair, aí que o [Jonas Mendes](https://nipher.io/) e o [Márcio Ribeiro](http://shiz.co/) ficaram comigo no hotel ajudando a refazer e ainda dando opiniões do que podia mudar, ficamos até muito tarde fazendo isso, mas no final de tudo, já estávamos rindo e eu estava bem aliviado que aparentemente estava tudo bom.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="pt" dir="ltr">Indo dormir 3h da manhã, mas tendo a certeza que tenho amigos dispostos a me ajudar sempre, isso já valeu o evento para mim <a href="https://twitter.com/hashtag/braziljs?src=hash">#braziljs</a></p>&mdash; Willian Justen (@Willian_justen) <a href="https://twitter.com/Willian_justen/status/769051603043282945">August 26, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -65,7 +65,7 @@ Ter visto a galera rindo dos meus exemplos e das minhas piadas bobas foi só me 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="pt" dir="ltr">final da palestra do <a href="https://twitter.com/Willian_justen">@Willian_justen</a> foi excelente 😁 <a href="https://twitter.com/hashtag/braziljs?src=hash">#braziljs</a> <a href="https://t.co/aDLggwbhUd">pic.twitter.com/aDLggwbhUd</a></p>&mdash; yuri (@ybrntt) <a href="https://twitter.com/ybrntt/status/769259830305550340">August 26, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-E para assistir a apresentação inteira, só seguir [nesse link](https://youtu.be/tJ0XV9W4nHw?t=23396), já no tempo marcado. Os slides também [estão aqui](http://willianjusten.com.br/braziljs-16).
+E para assistir a apresentação inteira, só seguir [nesse link](https://youtu.be/tJ0XV9W4nHw?t=23396), já no tempo marcado. Os slides também [estão aqui](https://willianjusten.com.br/braziljs-16).
 
 ## Depois
 
